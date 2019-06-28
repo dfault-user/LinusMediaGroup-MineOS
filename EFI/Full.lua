@@ -1,5 +1,22 @@
 
-local stringsMain, stringsChangeLabel, stringKeyDown, stringsFilesystem, colorsTitle, colorsBackground, colorsText, colorsSelectionBackground, colorsSelectionText, componentProxy, componentList, pullSignal, uptime, tableInsert, mathMax, mathMin, mathHuge, mathFloor = "MineOS EFI", "Change label", "key_down", "filesystem", 0x2D2D2D, 0xE1E1E1, 0x878787, 0x878787, 0xE1E1E1, component.proxy, component.list, computer.pullSignal, computer.uptime, table.insert, math.max, math.min, math.huge, math.floor
+local stringsMain = "MineOS LMG Edition"
+local stringsChangeLabel = "Change label"
+local stringKeyDown = "key_down"
+local stringsFilesystem = "filesystem"
+local colorsTitle = 0x2D2D2D
+local colorsBackground = 0xE1E1E1
+local colorsText = 0x878787
+local colorsSelectionBackground = 0x878787
+local colorsSelectionText = 0xE1E1E1
+local componentProxy = component.proxy
+local componentList = component.list
+local pullSignal = computer.pullSignal
+local uptime = computer.uptime
+local tableInsert = table.insert
+local mathMax = math.max
+local mathMin = math.min
+local mathHuge = math.huge
+local mathFloor = math.floor
 
 local eeprom, gpu, internetAddress = componentProxy(componentList("eeprom")()), componentProxy(componentList("gpu")()), componentList("internet")()
 
